@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-
+<div class="containerBackground">
     <h1>
         @section('title')
             {{ __('misc.all_brands') }}
@@ -21,7 +21,7 @@
     $chunk_size = ceil($size / $columns);
     ?>
 
-    <div class="container">
+    
         <!-- Example row of columns -->
         <div class="row">
 
@@ -43,7 +43,7 @@
                             ?>
 
                             <li>
-                                <a href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/">{{ $brand->name }}</a>
+                                <a class="brandLink" href="/{{ $brand->id }}/{{ $brand->name_url_encoded }}/">{{ $brand->name }}</a>
                             </li>
                         @endforeach
                     </ul>
