@@ -1,6 +1,26 @@
 
 <footer>
-	© {{ __('misc.copyright') }}
+  <div class="footerSections">
+    <div class="footerAboutUs">
+      <h2>About us</h2>
+      <p>We have every manual of every brand available on our site</p>
+    </div>
+    <div class="footerSocials">
+      <h2>Social Links</h2>
+      <a href="">Facebook</a>
+      <br>
+      <a href="">Twitter</a>
+    </div>
+    <div class="footerContactUs">
+      <h2>Contact us</h2>
+      <p>Mitchel van Gils</p>
+      <p>mitchelvangils@gmail.com</p>
+      <p>+31618385662</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© {{__('misc.copyright')}}</p>
+  </div>
 </footer>
 
 
